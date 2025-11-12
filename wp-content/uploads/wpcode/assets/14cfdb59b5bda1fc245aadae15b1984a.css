@@ -1,0 +1,38 @@
+.image-gradient-blend {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-gradient-blend img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fade at the top */
+.image-gradient-blend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px; /* size of the fade */
+  background: linear-gradient(to bottom, #000 0%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Fade at the bottom */
+.image-gradient-blend::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to top, #000 0%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}

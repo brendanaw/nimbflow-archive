@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="10px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com/ -->
+    <title>Arrow-down-gray</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button-4-Copy" transform="translate(-153.000000, -132.000000)">
+            <g id="Button-normal" transform="translate(151.000000, 100.000000)">
+                <g id="Arrow-down-gray" transform="translate(12.000000, 37.000000) scale(1, -1) translate(-12.000000, -37.000000) translate(2.000000, 32.000000)">
+                    <rect id="Rectangle-Copy-2" fill="#EEEEEE" x="0" y="0" width="20" height="10" rx="2"></rect>
+                    <path d="M10.227777,3.26573981 L12.5755108,6.00476259 C12.6833374,6.13056034 12.668769,6.31995034 12.5429712,6.42777698 C12.4885983,6.47438235 12.4193472,6.5 12.3477338,6.5 L7.65226619,6.5 C7.48658077,6.5 7.35226619,6.36568542 7.35226619,6.2 C7.35226619,6.12838662 7.37788384,6.05913552 7.42448921,6.00476259 L9.77222302,3.26573981 C9.88004966,3.13994206 10.0694397,3.1253736 10.1952374,3.23320024 C10.2069011,3.24319765 10.2177796,3.25407617 10.227777,3.26573981 Z" id="Triangle" fill="#9A9A9A"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,251 @@
+/* NF Tools ROI Calculator Styles - Vercel-inspired Dark Theme */
+
+.nf-roi-calculator-wrapper {
+    background-color: #000000; /* Pure black background */
+    color: #ffffff; /* White text */
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px 0; /* Remove auto horizontal margin, keep vertical */
+    border: 1px solid #333333; /* Optional: Subtle border instead of shadow */
+}
+
+.nf-roi-calculator-wrapper h2,
+.nf-roi-calculator-wrapper h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333333; /* Lighter grey border */
+    padding-bottom: 10px;
+}
+
+.nf-roi-field {
+    margin-bottom: 20px;
+}
+
+.nf-roi-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #999999; /* Medium grey for labels */
+}
+
+.nf-roi-field input[type="text"],
+.nf-roi-field input[type="number"],
+.nf-roi-field input[type="email"],
+.nf-roi-field select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #111111; /* Very dark grey input background */
+    border: 1px solid #333333; /* Medium grey border */
+    border-radius: 10px;
+    color: #ffffff; /* White text in inputs */
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out; /* Add transition for focus */
+}
+
+.nf-roi-field input[type="text"]:focus,
+.nf-roi-field input[type="number"]:focus,
+.nf-roi-field input[type="email"]:focus,
+.nf-roi-field select:focus {
+    border-color: #ffffff; /* White border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.nf-roi-field input::placeholder {
+    color: #666666; /* Darker grey placeholder text */
+}
+
+.nf-roi-field select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px 10px;
+    padding-right: 40px; /* Make space for the arrow */
+    border-radius: 10px;
+}
+
+.nf-roi-field .description,
+.nf-roi-field p.description {
+    font-size: 0.85em;
+    color: #777777; /* Slightly darker grey for descriptions */
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.nf-roi-submit-button {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 500; /* Changed from bold */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nf-roi-submit-button:hover {
+    background-color: #dddddd; /* Light grey on hover */
+}
+
+/* Modal Styles */
+.nf-roi-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+}
+
+.nf-roi-modal-content {
+    background-color: #0a0a0a; /* Slightly darker background */
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #222222; /* Subtler border */
+    border-radius: 6px; /* Sharper radius */
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5); /* Softer shadow */
+    color: #ffffff; /* White text */
+}
+
+.nf-roi-modal-close {
+    color: #aaaaaa; /* Light grey close button */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nf-roi-modal-close:hover,
+.nf-roi-modal-close:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nf-roi-modal .nf-roi-modal-content h2 {
+    text-align: center;
+    margin-top: 0; /* Keep existing margin rules if desired */
+    margin-bottom: 25px;
+    color: #ffffff; /* Ensure color consistency */
+}
+
+.nf-roi-modal h3 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center; /* Center the main modal title */
+}
+
+/* Lead Form Specifics */
+.nf-roi-lead-form .nf-roi-submit-button {
+    margin-top: 20px;
+}
+
+/* Results Modal Specifics */
+.nf-roi-results {
+    text-align: center;
+}
+
+.nf-roi-check-icon {
+    margin-bottom: 25px;
+    color: #28a745; /* Green color for the check icon SVG */
+}
+
+.nf-roi-result-card {
+    background-color: transparent; /* Remove card background */
+    padding: 15px 0; /* Adjust vertical padding, remove horizontal */
+    border-radius: 0; /* Remove card radius */
+    margin-bottom: 15px;
+    border: none; /* Remove card border */
+    border-bottom: 1px solid #222222; /* Add subtle bottom border for separation */
+}
+
+.nf-roi-result-card:last-child {
+    border-bottom: none; /* Remove border from last card */
+    margin-bottom: 0;
+}
+
+.nf-roi-result-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #aaaaaa; /* Lighter grey label */
+    font-weight: normal;
+    text-align: left; /* Ensure card titles are not centered */
+}
+
+.nf-roi-result-value {
+    font-size: 2.5em; /* Large result text */
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Geist Mono', monospace; /* Apply Geist Mono font */
+}
+
+.nf-roi-thank-you {
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #bbbbbb; /* Lighter grey thank you */
+    text-align: center; /* Center the thank you message and link */
+}
+
+.nf-roi-thank-you a {
+    color: #ffffff; /* White link text */
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+}
+
+.nf-roi-thank-you a:hover {
+    opacity: 0.8; /* Slight fade on hover */
+}
+
+/* Error Message */
+.nf-roi-error-message {
+    background-color: #220000; /* Dark red background */
+    color: #ffffff; /* White text */
+    border: 1px solid #550000; /* Darker red border */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+/* Section description styling */
+.nf-roi-section-description {
+    font-size: 0.85em;
+    color: #777777;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Conditional field styling */
+.nf-roi-conditional-fields {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #333333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .nf-roi-calculator-wrapper {
+        padding: 20px;
+    }
+    .nf-roi-modal-content {
+        width: 90%;
+        margin: 15% auto;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+.toggle {
+  cursor: pointer;
+}
+
+#option-pane {
+  padding-left: 15px;
+}
+
+td.social-button-checkbox {
+  padding: 0px;
+  margin: 0px;
+  padding-right: 3px;
+}
+
+td.social-button-image {
+  padding: 0px;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+ul.twit-creds-list {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+th.prlipro-link-health-emails {
+  width: 250px !important;
+}
+
+.prlipro-chip {
+  position: relative;
+}
+
+.prlipro-chip::after {
+  content: attr(data-title);
+  visibility: hidden;
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.prlipro-chip:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

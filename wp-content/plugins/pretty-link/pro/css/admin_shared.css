@@ -1,0 +1,35 @@
+#plp-link-health.postbox .plp-link-health-metabox {
+  display: flex;
+  justify-content: space-between;
+}
+
+#plp-link-health.postbox #trigger-manual-health-check {
+  font-size: 11px;
+  padding: 2px 5px;
+  line-height: 15px;
+  height: auto;
+}
+
+#plp-link-health.postbox .tooltip,
+.column-health_status .tooltip {
+  cursor: default;
+  font-size: 11px;
+  background: #c4c4c4;
+  padding: 2px 8px 4px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#plp-link-health.postbox .active,
+.column-health_status .active {
+  background: #3a9a43;
+  color: #fff;
+  border-color: #237b2b;
+}
+
+#plp-link-health.postbox .inactive,
+.column-health_status .inactive {
+  background: #c72323;
+  color: #fff;
+  border-color: #a71919;
+}

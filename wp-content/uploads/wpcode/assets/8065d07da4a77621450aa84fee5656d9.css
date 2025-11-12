@@ -1,0 +1,30 @@
+/* Target all Kadence table containers */
+.wp-block-kadence-table .kb-table-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Target all Kadence tables */
+.wp-block-kadence-table .kb-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Fix corners for all tables by targeting the corner cells */
+.wp-block-kadence-table .kb-table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.wp-block-kadence-table .kb-table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.wp-block-kadence-table .kb-table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.wp-block-kadence-table .kb-table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
